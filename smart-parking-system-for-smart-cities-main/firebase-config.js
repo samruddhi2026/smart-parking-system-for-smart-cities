@@ -1,12 +1,12 @@
 // Firebase web configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAUYu_O2GTBc7PSNEO6DM1LtmNq0Kp1LrU",
-  authDomain: "smart-parking-system-79ea9.firebaseapp.com",
-  databaseURL: "https://smart-parking-system-79ea9-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "smart-parking-system-79ea9",
-  storageBucket: "smart-parking-system-79ea9.firebasestorage.app",
-  messagingSenderId: "64061292409",
-  appId: "1:64061292409:web:f5f4518e2c6393fb7e79a8"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID
 };
 
 if (!firebase.apps.length) {
